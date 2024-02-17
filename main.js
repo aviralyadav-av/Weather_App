@@ -18,6 +18,9 @@ async function checkWeather(city) {
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + "Km/H";
 
+  
+  console.log(data.weather[0].main );
+
   if (data.weather[0].main == "Clouds") {
     weatherIcon.src = "images/clouds.png";
   } 
